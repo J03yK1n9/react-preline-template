@@ -193,7 +193,7 @@ function Cookies() {
         By browsing this website, you accept our{" "}
         <CustomLink
           className="inline-flex items-center gap-x-1.5 text-blue-600 decoration-2 hover:underline font-medium dark:text-blue-500"
-          url="/cookie"
+          url="#"
         >
           Cookies Policy
         </CustomLink>

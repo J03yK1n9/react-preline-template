@@ -57,9 +57,14 @@ module.exports = {
     extend: {
       // extend base Tailwind CSS utility classes
       colors: {
-        custom_neutral: '#fbfaf9',
-        custom_dark: '#171717',
-      }
+        custom_neutral: '#fbfbfe',
+        custom_dark: '#010104',
+        'text': 'var(--text)',
+        'background': 'var(--background)',
+        'primary': 'var(--primary)',
+        'secondary': 'var(--secondary)',
+        'accent': 'var(--accent)',
+       },
     },
   },
 

@@ -261,7 +261,7 @@ function Header({ links }) {
     type="button"
     className="hs-dropdown-toggle py-3 px-4 inline-flex items-center gap-x-2 z-50 text-sm font-medium text-gray-500 hover:text-gray-400 sm:py-6 dark:text-neutral-400 dark:hover:text-white disabled:opacity-50 disabled:pointer-events-none  dark:border-neutral-700 focus:text-blue-600 focus:dark:text-blue-500"
   >
-    Resources
+    {/* Resources
     <svg
       className="hs-dropdown-open:rotate-180 size-4"
       xmlns="http://www.w3.org/2000/svg"
@@ -307,6 +307,250 @@ function Header({ links }) {
     </CustomLink>
   </div>
 </div>
+
+<div className="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] py-3 md:py-4">
+  <button
+    type="button"
+    className="flex items-center w-full text-gray-500 hover:text-gray-400 font-medium dark:text-neutral-400 dark:hover:text-neutral-500"
+  > */}
+    Resources
+    <svg
+      className="flex-shrink-0 ms-2 size-4"
+      xmlns="http://www.w3.org/2000/svg"
+      width={24}
+      height={24}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="m6 9 6 6 6-6" />
+    </svg>
+  </button>
+  <div className="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 w-full hidden text-balance z-10 top-full start-0 min-w-60 bg-white md:shadow-2xl rounded-lg py-2 md:p-4 dark:bg-neutral-800 dark:divide-neutral-700 before:absolute before:-top-5 before:start-0 before:w-full before:h-5">
+    <div className="md:grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="flex flex-col mx-1 md:mx-0">
+        <a
+          className="group flex gap-x-5 hover:bg-gray-100 rounded-lg p-4 dark:text-neutral-200 dark:hover:bg-neutral-500/10"
+          href="#"
+        >
+          <svg
+            className="flex-shrink-0 size-5 mt-1"
+            xmlns="http://www.w3.org/2000/svg"
+            width={24}
+            height={24}
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={2}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+          </svg>
+          <div className="grow">
+            <p className="font-medium text-gray-800 dark:text-neutral-200">
+              Support Docs
+            </p>
+            <p className="text-sm text-gray-500 group-hover:text-gray-800 dark:text-neutral-500 dark:group-hover:text-neutral-200">
+              Explore advice and explanations for all of Preline's features.
+            </p>
+          </div>
+        </a>
+        <a
+          className="group flex gap-x-5 hover:bg-gray-100 rounded-lg p-4 dark:text-neutral-200 dark:hover:bg-neutral-500/10"
+          href="#"
+        >
+          <svg
+            className="flex-shrink-0 size-5 mt-1"
+            xmlns="http://www.w3.org/2000/svg"
+            width={24}
+            height={24}
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={2}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <rect width={7} height={7} x={14} y={3} rx={1} />
+            <path d="M10 21V8a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1H3" />
+          </svg>
+          <div className="grow">
+            <p className="font-medium text-gray-800 dark:text-neutral-200">
+              Integrations
+            </p>
+            <p className="text-sm text-gray-500 group-hover:text-gray-800 dark:text-neutral-500 dark:group-hover:text-neutral-200">
+              Discover the huge range of tools that Preline integrates with.
+            </p>
+          </div>
+        </a>
+        <a
+          className="group flex gap-x-5 hover:bg-gray-100 rounded-lg p-4 dark:text-neutral-200 dark:hover:bg-neutral-500/10"
+          href="#"
+        >
+          <svg
+            className="flex-shrink-0 size-5 mt-1"
+            xmlns="http://www.w3.org/2000/svg"
+            width={24}
+            height={24}
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={2}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="m7 11 2-2-2-2" />
+            <path d="M11 13h4" />
+            <rect width={18} height={18} x={3} y={3} rx={2} ry={2} />
+          </svg>
+          <div className="grow">
+            <p className="font-medium text-gray-800 dark:text-neutral-200">
+              API Reference
+            </p>
+            <p className="text-sm text-gray-500 group-hover:text-gray-800 dark:text-neutral-500 dark:group-hover:text-neutral-200">
+              Build custom integrations with our first-class API.
+            </p>
+          </div>
+        </a>
+      </div>
+      <div className="flex flex-col mx-1 md:mx-0">
+        <a
+          className="group flex gap-x-5 hover:bg-gray-100 rounded-lg p-4 dark:text-neutral-200 dark:hover:bg-neutral-500/10"
+          href="#"
+        >
+          <svg
+            className="flex-shrink-0 size-5 mt-1"
+            xmlns="http://www.w3.org/2000/svg"
+            width={24}
+            height={24}
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={2}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <circle cx={12} cy={12} r={10} />
+            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+            <path d="M12 17h.01" />
+          </svg>
+          <div className="grow">
+            <p className="font-medium text-gray-800 dark:text-neutral-200">
+              Help Center
+            </p>
+            <p className="text-sm text-gray-500 group-hover:text-gray-800 dark:text-neutral-500 dark:group-hover:text-neutral-200">
+              Learn how to install, set up, and use Preline.
+            </p>
+          </div>
+        </a>
+        <a
+          className="group flex gap-x-5 hover:bg-gray-100 rounded-lg p-4 dark:text-neutral-200 dark:hover:bg-neutral-500/10"
+          href="#"
+        >
+          <svg
+            className="flex-shrink-0 size-5 mt-1"
+            xmlns="http://www.w3.org/2000/svg"
+            width={24}
+            height={24}
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={2}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <circle cx={12} cy={12} r={4} />
+            <path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-4 8" />
+          </svg>
+          <div className="grow">
+            <p className="font-medium text-gray-800 dark:text-neutral-200">
+              Developer Hub
+            </p>
+            <p className="text-sm text-gray-500 group-hover:text-gray-800 dark:text-neutral-500 dark:group-hover:text-neutral-200">
+              Learn how to integrate or build on top of Preline.
+            </p>
+          </div>
+        </a>
+        <a
+          className="group flex gap-x-5 hover:bg-gray-100 rounded-lg p-4 dark:text-neutral-200 dark:hover:bg-neutral-500/10"
+          href="#"
+        >
+          <svg
+            className="flex-shrink-0 size-5 mt-1"
+            xmlns="http://www.w3.org/2000/svg"
+            width={24}
+            height={24}
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={2}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+            <circle cx={9} cy={7} r={4} />
+            <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+          </svg>
+          <div className="grow">
+            <p className="font-medium text-gray-800 dark:text-neutral-200">
+              Community Forum
+            </p>
+            <p className="text-sm text-gray-500 group-hover:text-gray-800 dark:text-neutral-500 dark:group-hover:text-neutral-200">
+              Learn, share, and connect with other Preline users.
+            </p>
+          </div>
+        </a>
+      </div>
+      <div className="flex flex-col pt-4 md:pt-0 mx-1 md:mx-0">
+        <span className="text-sm font-semibold uppercase text-gray-800 dark:text-neutral-200">
+          Customer stories
+        </span>
+        {/* Link */}
+        <a
+          className="group mt-2 p-3 flex gap-x-5 items-center rounded-xl hover:bg-gray-100 dark:hover:bg-neutral-500/10"
+          href="#"
+        >
+          <img
+            className="size-32 rounded-lg"
+            src="https://images.unsplash.com/photo-1648737967328-690548aec14f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=320&q=80"
+            alt="Image Description"
+          />
+          <div className="grow">
+            <p className="text-sm text-gray-800 dark:text-neutral-400">
+              Preline Projects has proved to be most efficient cloud based
+              project tracking and bug tracking tool.
+            </p>
+            <p className="mt-3 inline-flex items-center gap-x-1 text-sm text-blue-600 decoration-2 hover:underline font-medium dark:text-blue-400 dark:hover:text-blue-500">
+              Learn more
+              <svg
+                className="flex-shrink-0 size-4 transition ease-in-out group-hover:translate-x-1"
+                xmlns="http://www.w3.org/2000/svg"
+                width={24}
+                height={24}
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={2}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="m9 18 6-6-6-6" />
+              </svg>
+            </p>
+          </div>
+        </a>
+        {/* End Link */}
+      </div>
+    </div>
+  </div>
+</div>
+
 {/* End of resources dropdowm */}
 
 
@@ -341,7 +585,7 @@ function Header({ links }) {
         <div className="flex items-center gap-x-2 sm:ms-auto">
           <CustomLink
             className="flex items-center gap-x-2 font-medium text-gray-500 hover:text-blue-600 dark:text-neutral-400 dark:hover:text-blue-500"
-            url="/"
+            url="/login"
           >
             <svg
               className="flex-shrink-0 size-4"
@@ -363,7 +607,7 @@ function Header({ links }) {
         </div>
 
   <CustomLink
-    url="/"
+    url="/signup"
   >
     <button type="button" className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 focus:text-blue-600 focus:dark:text-blue-500">
       Signup free

@@ -1,5 +1,6 @@
 import React from 'react'
 import Subscribe from '../Subscribe';
+import OneSolution from './solutions';
 
 function MidSection() {
   return (
@@ -503,6 +504,7 @@ function MidSection() {
 </>
 
 <Subscribe />
+{/* <OneSolution /> */}
 </>
 
   )

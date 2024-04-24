@@ -8,7 +8,7 @@ function About() {
       <div className="max-w-2xl mx-auto">
         {/* Grid */}
         <div className="grid gap-12">
-          <div>
+          <div className="z-0">
             <h2 className="text-3xl text-gray-800 font-bold lg:text-4xl dark:text-white">
               Our vision
             </h2>
