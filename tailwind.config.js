@@ -1,8 +1,9 @@
+/* eslint-env node */
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   // configure the paths to all of your source files
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
+    './src/**/*.{js,jsx,ts,tsx}',
     '.src/containers/**/*.{js,jsx,ts,tsx}',
     './node_modules/preline/preline.js',
     './node_modules/preline/dist/*.js',
@@ -59,19 +60,15 @@ module.exports = {
       colors: {
         custom_neutral: '#fbfbfe',
         custom_dark: '#010104',
-        'text': 'var(--text)',
-        'background': 'var(--background)',
-        'primary': 'var(--primary)',
-        'secondary': 'var(--secondary)',
-        'accent': 'var(--accent)',
-       },
+        text: 'var(--text)',
+        background: 'var(--background)',
+        primary: 'var(--primary)',
+        secondary: 'var(--secondary)',
+        accent: 'var(--accent)',
+      },
     },
   },
 
   // add plugins to your Tailwind CSS project
-  plugins: [
-    require('@tailwindcss/forms'),
-    require('preline/plugin'),
-  ],
+  plugins: [require('@tailwindcss/forms'), require('preline/plugin')],
 }
-

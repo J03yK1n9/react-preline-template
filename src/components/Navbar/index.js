@@ -1,17 +1,15 @@
 import React from 'react'
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 
-function Navbar({ links }) {
-  return (
-    <div>Nav</div>
-  )
+function Navbar() {
+  return <div>Nav</div>
 }
 
 Navbar.defaultProps = {
   links: [],
-};
+}
 Navbar.propTypes = {
   links: PropTypes.array,
 }
 
-export default Navbar;
+export default Navbar

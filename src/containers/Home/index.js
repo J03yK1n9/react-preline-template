@@ -1,8 +1,8 @@
-import React from 'react';
-import Hero from '../../components/Hero';
-import Cookies from '../../components/cookies';
-import PartnerSection from '../../components/PartnerSection';
-import MidSection from '../../components/MidSection';
+import React from 'react'
+import Hero from '../../components/Hero'
+import Cookies from '../../components/cookies'
+import PartnerSection from '../../components/PartnerSection'
+import MidSection from '../../components/MidSection'
 
 function Home() {
   return (
@@ -15,4 +15,4 @@ function Home() {
   )
 }
 
-export default Home;
+export default Home

@@ -5,21 +5,21 @@ import { Link } from 'react-router-dom'
 function CustomLink({ className, children, url }) {
   return (
     <Link className={className} to={url}>
-        {children}
+      {children}
     </Link>
   )
 }
 
 CustomLink.defaultProps = {
-    className: '',
-    children: null,
-    url: '#'
-};
-
-CustomLink.propTypes = {
-    className: PropTypes.string,
-    children: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
-    url: PropTypes.string
+  className: '',
+  children: null,
+  url: '#',
 }
 
-export default CustomLink;
+CustomLink.propTypes = {
+  className: PropTypes.string,
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
+  url: PropTypes.string,
+}
+
+export default CustomLink

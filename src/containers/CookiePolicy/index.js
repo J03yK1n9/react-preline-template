@@ -1,7 +1,7 @@
 import React from 'react'
 // import PropTypes from 'prop-types'
 
-function CookiePolicy(props) {
+function CookiePolicy() {
   return (
     <>
       <div className="z-[90]">
@@ -63,8 +63,9 @@ function CookiePolicy(props) {
                       Account Activity
                     </span>
                     <span className="block text-sm text-gray-500 dark:text-neutral-500">
-                      Get important notifications about you or activity you've
-                      missed
+                      {/* Escaping `'` with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo; */}
+                      {`Get important notifications about you or activity you've
+                      missed`}
                     </span>
                   </span>
                 </span>
@@ -186,4 +187,4 @@ function CookiePolicy(props) {
 CookiePolicy.defaultProptypes = {}
 CookiePolicy.propTypes = {}
 
-export default CookiePolicy;
+export default CookiePolicy

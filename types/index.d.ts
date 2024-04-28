@@ -1,3 +1,3 @@
-declare module "*";
-declare module "*.jpg";
-declare module "*.png";
+declare module "*"
+declare module "*.jpg"
+declare module "*.png"
